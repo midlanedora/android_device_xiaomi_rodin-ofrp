@@ -18,8 +18,8 @@
 $(call inherit-product, device/xiaomi/rodin/device.mk)
 
 # Device identifier
-PRODUCT_DEVICE := rodin
-PRODUCT_NAME := twrp_rodin
+PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 2412DPC0AG
 PRODUCT_MANUFACTURER := Xiaomi
